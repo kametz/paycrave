@@ -141,11 +141,16 @@ body {
   .gen-footer .search-trucks,
   .gen-footer .my-account,
   .gen-footer .checkout,
-  .gen-footer .total {
-    width: 40%;
+  .gen-footer .total,
+  .gen-footer .rt-home {
+    width: 39%;
     text-align: center;
     height: 45px;
     float: left; }
+  .gen-footer .rt-home {
+    width: 18%;
+    margin-top: 6px;
+    margin-left: 2px; }
   .gen-footer .my-account,
   .gen-footer .checkout {
     float: right; }
@@ -157,11 +162,35 @@ body {
   .gen-footer .total {
     margin-bottom: 5px;
     margin-top: 8px;
-    padding-left: 10px; }
+    padding-left: 5px; }
   .gen-footer .checkout {
     background-color: #4caf50; }
+  .gen-footer .complete {
+    background-color: #333333;
+    width: 78%;
+    float: right;
+    padding-bottom: 12px;
+    text-align: center; }
+    .gen-footer .complete .favorites {
+      float: left;
+      padding-left: 10px;
+      margin-top: 2px; }
+    .gen-footer .complete .rate-it {
+      float: right;
+      padding-right: 10px;
+      margin-top: 10px; }
   @media screen and (min-width: 500px) {
     .gen-footer {
+      border-radius: 0 0 5px 5px; } }
+
+.min-footer {
+  background-color: #2d3f8c;
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0; }
+  @media screen and (min-width: 500px) {
+    .min-footer {
       border-radius: 0 0 5px 5px; } }
 
 .button {
@@ -285,3 +314,34 @@ body {
   .menu-bottom .col2 {
     width: 20%;
     padding-left: 15px; }
+
+/* Cart */
+.cart {
+  width: 95%;
+  margin: 20px auto; }
+  .cart .col1 {
+    width: 75%; }
+  .cart .col2 {
+    width: 25%;
+    font-weight: 700;
+    text-align: right; }
+
+.tip {
+  border: 1px solid #333333; }
+
+.total {
+  font-weight: 700; }
+
+.sums {
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 30px;
+  border-top: 1px solid #333333; }
+  .sums td {
+    padding-top: 10px; }
+
+/* Order Complete / Thank you */
+.thanks {
+  padding: 20px; }
+  .thanks img {
+    width: 100%; }

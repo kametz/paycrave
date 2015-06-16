@@ -13,20 +13,6 @@
   <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css" class="css">
   
-  <!-- Map -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script>
-      function initialize() {
-        var mapCanvas = document.getElementById('map-canvas');
-        var mapOptions = {
-          center: new google.maps.LatLng(39.7497633, -104.9929262),
-          zoom: 14,
-          mapTypeId: google.maps.MapTypeId.ROADMAP
-        }
-        var map = new google.maps.Map(mapCanvas, mapOptions)
-      }
-      google.maps.event.addDomListener(window, 'load', initialize);
-    </script>
 </head>
 
 <body>
@@ -84,14 +70,21 @@
 
 
     <div class="gen-footer white">
+      <a href="../index.html">
+        <div class="rt-home">
+          <img src="../images/pig.svg"><br> Home
+        </div>
+      </a>
       <div class="total">
         <h2>Subtotal: $9.00</h2>
       </div>
-      <div class="checkout">
-        <h2>Checkout 
-        <i class="fa fa-angle-right"></i></h2>
-      </div>
-    </div>
+      <a href="signin.html">
+        <div class="checkout">
+          <h2>Checkout 
+          <i class="fa fa-angle-right"></i></h2>
+        </div>
+      </a>
+    </div> <!-- /footer -->
 
   </div> <!-- /window -->
 

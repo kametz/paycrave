@@ -1,0 +1,31 @@
+.cart {
+  width: 95%;
+  margin: 20px auto;
+  
+  .col1 {
+    width: 75%;
+  }
+  .col2 {
+    width: 25%;
+    font-weight: 700;
+    text-align: right;
+  }
+}
+
+.tip {
+  border: 1px solid $dkgray;
+}
+
+.total {
+  font-weight: 700;
+}
+
+.sums {
+  width: 100%;
+  text-transform: uppercase;
+  margin-top: 30px;
+  border-top: 1px solid $dkgray;
+  td {
+    padding-top: 10px;
+  }
+}

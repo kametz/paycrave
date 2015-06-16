@@ -119,11 +119,18 @@ body {
   .search-trucks,
   .my-account,
   .checkout,
-  .total {
-    width: 40%;
+  .total,
+  .rt-home {
+    width: 39%;
     text-align: center;
     height: 45px;
     float: left;
+  }
+
+  .rt-home {
+    width: 18%;
+    margin-top: 6px;
+    margin-left: 2px;
   }
 
   .my-account,
@@ -141,13 +148,44 @@ body {
   .total {
     margin-bottom: 5px;
     margin-top: 8px;
-    padding-left: 10px;
+    padding-left: 5px;
   }
 
   .checkout {
     background-color: $green1;
   }
 
+  .complete {
+    background-color: $dkgray;
+    width: 78%;
+    float: right;
+    padding-bottom: 12px;
+    text-align: center;
+    .favorites {
+      float: left;
+      padding-left: 10px;
+      margin-top: 2px;
+    }
+    .rate-it {
+      float: right;
+      padding-right: 10px;
+      margin-top: 10px;
+    }
+  }
+
+
+
+  @media screen and (min-width: $smbreak) {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+.min-footer {
+  background-color: $blue;
+  height: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   @media screen and (min-width: $smbreak) {
     border-radius: 0 0 5px 5px;
   }
