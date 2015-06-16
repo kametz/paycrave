@@ -6,7 +6,7 @@
 
 .map-container {
   height: 45%;
-  margin-bottom: 15px;
+  margin-bottom: 2%;
 
 }
 
@@ -19,5 +19,11 @@
   h1 {
     padding: 10px;
     padding-left: 10px;
+    display: inline-block;
+  }
+  .fa-heart {
+    color: $pink;
+    text-align: right;
+    display: inline-block;  
   }
 }
