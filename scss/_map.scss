@@ -1,0 +1,23 @@
+#map-canvas {
+  height: 100%;
+  width: 100%;
+  z-index: 800;
+}
+
+.map-container {
+  height: 45%;
+  margin-bottom: 15px;
+
+}
+
+.map-label {
+  background-color: rgba($dkgray, .95);
+  margin-top: -40px;
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  h1 {
+    padding: 10px;
+    padding-left: 10px;
+  }
+}

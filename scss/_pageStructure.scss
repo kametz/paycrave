@@ -1,0 +1,108 @@
+$smbreak: 500px;
+
+html { 
+  font-size: 62.5%;   /* ~10px */
+} 
+
+body {
+  font-family: $Roboto;
+  font-size: 1.4rem; /* 14px */
+  font-weight: 400;
+  background-color: $dkgray;
+  background: repeating-linear-gradient(
+    45deg,
+    #808080,
+    #808080 3px,
+    #919191 3px,
+    #919191 6px
+  );
+}
+
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
+  ::-webkit-scrollbar {
+      width:  10px;
+      height: 1px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: $medgray;
+  }
+
+  ::-webkit-scrollbar-track {
+      background: $ltgray;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $medgray;
+    scrollbar-track-color: $ltgray;
+  }
+}
+
+@include scrollbars(.5em, slategray);
+
+.window {
+  background-color: $ltgray;
+  height: 100vh;
+  min-height: 500px;
+  margin: 0;
+  overflow: hidden;
+  position:absolute;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  width: 100%;
+  @media screen and (min-width: $smbreak) {
+    border-radius: 5px;
+    height: 640px;
+    margin: 10px auto;
+    position: relative;
+    width: 360px;
+  }
+}
+
+.large_header {
+  background-color: $blue;
+  border-bottom: 10px solid $dkgray;
+  height: 7%;
+  width: 100%;
+  @media screen and (min-width: $smbreak) {
+    border-radius: 5px 5px 0 0;
+  }
+  img {
+    padding: 5px;
+    padding-top: 8px;
+    width: 35%;
+    @media screen and (min-width: $smbreak) {
+      padding-top: 12px;
+      padding-left: 12px;
+    }
+  }
+}
+
+.gen-footer {
+  background-color: $blue;
+  height: 45px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px;
+  i {
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  .search-trucks,
+  .my-account {
+    width: 40%;
+    text-align: center;
+    height: 100%;
+    float: left;
+  }
+  .my-account {
+    float: right;
+  }
+  @media screen and (min-width: $smbreak) {
+    border-radius: 0 0 5px 5px;
+  }
+}

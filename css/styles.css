@@ -1,0 +1,176 @@
+/* Document Colors and Basic Color Definitions */
+.white {
+  color: #ffffff; }
+
+.dark {
+  color: #333333; }
+
+/* Basic Typography, body and headers */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+
+h1 {
+  font-size: 2.2rem;
+  /* 24px */
+  font-weight: 700; }
+
+h2 {
+  font-size: 2rem;
+  /* 20px */
+  font-weight: 700; }
+
+h3 {
+  font-size: 2.4rem;
+  font-weight: 400; }
+
+h4 {
+  font-size: 2rem;
+  font-weight: 400; }
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 400; }
+
+h6 {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* Page Structure */
+html {
+  font-size: 62.5%;
+  /* ~10px */ }
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.4rem;
+  /* 14px */
+  font-weight: 400;
+  background-color: #333333;
+  background: repeating-linear-gradient(45deg, #808080, #808080 3px, #919191 3px, #919191 6px); }
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 1px; }
+
+::-webkit-scrollbar-thumb {
+  background: #adadad; }
+
+::-webkit-scrollbar-track {
+  background: #eaeaea; }
+
+body {
+  scrollbar-face-color: #adadad;
+  scrollbar-track-color: #eaeaea; }
+
+.window {
+  background-color: #eaeaea;
+  height: 100vh;
+  min-height: 500px;
+  margin: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+  @media screen and (min-width: 500px) {
+    .window {
+      border-radius: 5px;
+      height: 640px;
+      margin: 10px auto;
+      position: relative;
+      width: 360px; } }
+
+.large_header {
+  background-color: #2d3f8c;
+  border-bottom: 10px solid #333333;
+  height: 7%;
+  width: 100%; }
+  @media screen and (min-width: 500px) {
+    .large_header {
+      border-radius: 5px 5px 0 0; } }
+  .large_header img {
+    padding: 5px;
+    padding-top: 8px;
+    width: 35%; }
+    @media screen and (min-width: 500px) {
+      .large_header img {
+        padding-top: 12px;
+        padding-left: 12px; } }
+
+.gen-footer {
+  background-color: #2d3f8c;
+  height: 45px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 10px; }
+  .gen-footer i {
+    margin-bottom: 5px;
+    margin-top: 10px; }
+  .gen-footer .search-trucks,
+  .gen-footer .my-account {
+    width: 40%;
+    text-align: center;
+    height: 100%;
+    float: left; }
+  .gen-footer .my-account {
+    float: right; }
+  @media screen and (min-width: 500px) {
+    .gen-footer {
+      border-radius: 0 0 5px 5px; } }
+
+/* Map */
+#map-canvas {
+  height: 100%;
+  width: 100%;
+  z-index: 800; }
+
+.map-container {
+  height: 45%;
+  margin-bottom: 15px; }
+
+.map-label {
+  background-color: rgba(51, 51, 51, 0.95);
+  margin-top: -40px;
+  position: absolute;
+  z-index: 1000;
+  width: 100%; }
+  .map-label h1 {
+    padding: 10px;
+    padding-left: 10px; }
+
+/* List of Trucks on homepage */
+.truck-list {
+  height: 28%;
+  overflow-y: auto;
+  padding-bottom: 20px; }
+  @media screen and (min-width: 375px) {
+    .truck-list {
+      height: 33%; } }
+  .truck-list h5 {
+    display: inline-block; }
+  .truck-list .name {
+    display: inline-block;
+    padding-left: 10px; }
+  .truck-list .distance {
+    display: inline-block;
+    float: right;
+    padding-right: 10px; }
+
+.selected,
+.unselected {
+  background-color: #2d3f8c;
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0; }
+
+.unselected {
+  background-color: #81c784; }
+
+.truck-list div:first-child {
+  margin-top: 0; }
