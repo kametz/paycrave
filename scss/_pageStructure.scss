@@ -81,6 +81,29 @@ body {
   }
 }
 
+.truck-header {
+  background-color: $dkgray;
+  border-top: 10px solid $blue;
+  width: 100%;
+  h1 {
+    padding: 10px;
+    padding-left: 10px;
+    display: inline-block;
+  }
+  i {
+    color: $pink;
+    text-align: right;
+    display: inline-block;  
+    position: absolute;
+    top: 25px;
+  }
+  img {
+    position: absolute;
+    top: 23px;
+    right: 10px;
+  }
+}
+
 .gen-footer {
   background-color: $blue;
   height: 45px;
@@ -92,16 +115,39 @@ body {
     margin-bottom: 5px;
     margin-top: 10px;
   }
+
   .search-trucks,
-  .my-account {
+  .my-account,
+  .checkout,
+  .total {
     width: 40%;
     text-align: center;
-    height: 100%;
+    height: 45px;
     float: left;
   }
-  .my-account {
+
+  .my-account,
+  .checkout {
     float: right;
   }
+
+  .checkout,
+  .total {
+    height: 100%;
+    padding-top: 8px;
+    padding-bottom: 10px;
+  }
+
+  .total {
+    margin-bottom: 5px;
+    margin-top: 8px;
+    padding-left: 10px;
+  }
+
+  .checkout {
+    background-color: $green1;
+  }
+
   @media screen and (min-width: $smbreak) {
     border-radius: 0 0 5px 5px;
   }
@@ -111,8 +157,8 @@ body {
   background-color: $green1;
   border-radius: 3px;
   -webkit-box-shadow: 0px 1px 1px 0px rgba(129,199,132,1);
--moz-box-shadow: 0px 1px 1px 0px rgba(129,199,132,1);
-box-shadow: 0px 1px 1px 0px rgba(129,199,132,1);
+  -moz-box-shadow: 0px 1px 1px 0px rgba(129,199,132,1);
+  box-shadow: 0px 1px 1px 0px rgba(129,199,132,1);
   margin: 20px auto;
   padding: 10px 0;
   width: 90%;

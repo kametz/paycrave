@@ -10,6 +10,10 @@
 
 }
 
+.one-truck {
+  height: 40%;
+}
+
 .map-label {
   background-color: rgba($dkgray, .95);
   margin-top: -40px;
@@ -21,9 +25,11 @@
     padding-left: 10px;
     display: inline-block;
   }
-  .fa-heart {
+  i {
     color: $pink;
     text-align: right;
     display: inline-block;  
+    position: absolute;
+    top: 16px;
   }
 }

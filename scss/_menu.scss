@@ -1,0 +1,45 @@
+.menu-top {
+  width: 100%;
+  display: flex;
+  flex-wrap: flex;
+  height: 160px;
+  overflow: hidden;
+}
+.menu-photo {
+    width: 50%;
+}
+.menu-asides {
+  background-color: $blue;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  div {
+    padding: 10px;
+  }
+  div:first-child {
+    border-bottom: 1px solid $white;
+  }
+}
+
+.menu-bottom {
+  height: 45%;
+  @media screen and (min-width: 375px) {
+    height: 55%;
+  }
+  overflow-y: auto;
+  width: 95%;
+  margin: 10px auto;
+  padding-left: 15px;
+  td {
+    padding: 5px;
+  }
+  .col1 {
+    width: 80%;
+  }
+  .col2 {
+    width: 20%;
+    padding-left: 15px;
+  }
+}
+
+
