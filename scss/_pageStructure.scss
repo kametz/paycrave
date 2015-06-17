@@ -18,29 +18,6 @@ body {
   );
 }
 
-@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white, 50%)) {
-  ::-webkit-scrollbar {
-      width:  10px;
-      height: 1px;
-  }
-
-  ::-webkit-scrollbar-thumb {
-      background: $medgray;
-  }
-
-  ::-webkit-scrollbar-track {
-      background: $ltgray;
-  }
-
-  // For Internet Explorer
-  body {
-    scrollbar-face-color: $medgray;
-    scrollbar-track-color: $ltgray;
-  }
-}
-
-@include scrollbars(.5em, slategray);
-
 .window {
   background-color: $ltgray;
   height: 100vh;
@@ -54,36 +31,82 @@ body {
   left:0;
   width: 100%;
   @media screen and (min-width: $smbreak) {
-    border-radius: 5px;
-    height: 640px;
+    border-radius: 45px;
+    height: 560px;
     margin: 10px auto;
     position: relative;
     width: 360px;
+    border-left: 15px solid $dkgray;
+    border-right: 15px solid $dkgray;
+    border-top: 60px solid $dkgray;
+    border-bottom: 55px solid $dkgray;
+  }
+}
+
+.window-contents {
+  height: 100vh;
+  padding-top: 30px;
+  @media screen and (min-width: $smbreak) {
+    height: 540px;
+    padding-top: 55px;
+  }
+}
+
+.page-content {
+  padding-bottom: 5px;
+  @media screen and (min-width: $smbreak) {
+    padding-bottom: 125px;
+  }
+}
+
+img.phone-top {
+  display: none;
+  @media screen and (min-width: $smbreak) {
+    display: initial;
+    width: 100%;
+    margin-top: -1px;
+    z-index: 1000;
+    position:absolute;
   }
 }
 
 .large_header {
-  background-color: $dkblue;
-  border-bottom: 10px solid $dkgray;
-  height: 7%;
+  background-color: $blue;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  height: 35px;
   width: 100%;
-  @media screen and (min-width: $smbreak) {
-    border-radius: 5px 5px 0 0;
-  }
   img {
-    padding: 5px;
-    padding-top: 8px;
+    padding-left: 10px;
+    padding-top: 6px;
     width: 35%;
-    @media screen and (min-width: $smbreak) {
-      padding-top: 12px;
-      padding-left: 12px;
+  }
+  i {
+    display: inline-block;
+    padding-top: 4px;
+    padding-right: 20px;
+    float: right;
+  }
+  @media screen and (min-width: $smbreak) {
+    top: 22px;
+    img {
+      padding-left: 10px;
+      padding-top: 6px;
+      width: 35%;
+    }
+    i {
+      display: inline-block;
+      padding-top: 4px;
+      padding-right: 12px;
+      float: right;
     }
   }
 }
 
 .truck-header {
   background-color: $dkgray;
-  border-top: 10px solid $dkblue;
+  border-top: 10px solid $blue;
   width: 100%;
   h1 {
     padding: 10px;
@@ -105,7 +128,7 @@ body {
 }
 
 .gen-footer {
-  background-color: $dkblue;
+  background-color: $blue;
   height: 45px;
   width: 100%;
   position: absolute;
@@ -116,43 +139,25 @@ body {
     margin-top: 10px;
   }
 
-  .search-trucks,
-  .my-account,
   .checkout,
-  .total,
-  .rt-home {
+  .total, {
     width: 39%;
     text-align: center;
-    height: 45px;
-    float: left;
-  }
-
-  .rt-home {
-    width: 18%;
-    margin-top: 6px;
-    margin-left: 2px;
-  }
-
-  .my-account,
-  .checkout {
-    float: right;
-  }
-
-  .checkout,
-  .total {
     height: 100%;
+    float: left;
     padding-top: 8px;
     padding-bottom: 10px;
+  }
+
+  .checkout {
+    float: right;
+    background-color: $blue;
   }
 
   .total {
     margin-bottom: 5px;
     margin-top: 8px;
     padding-left: 5px;
-  }
-
-  .checkout {
-    background-color: $blue;
   }
 
   .complete {
@@ -166,26 +171,26 @@ body {
       padding-left: 15px;
       margin-top: 2px;
     }
+
     .rate-it {
       float: right;
       padding-right: 10px;
       margin-top: 10px;
     }
   }
-
-  @media screen and (min-width: $smbreak) {
-    border-radius: 0 0 5px 5px;
-  }
 }
 
 .min-footer {
-  background-color: $dkblue;
-  height: 10px;
-  width: 100%;
-  position: absolute;
+  background-color: $blue;
   bottom: 0;
+  height: 30px;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+
   @media screen and (min-width: $smbreak) {
-    border-radius: 0 0 5px 5px;
+    bottom: 45px; 
+    height: 10px;
   }
 }
 
@@ -200,4 +205,16 @@ body {
 
 .button:hover {
   background-color: $green2;
+}
+
+.phone-nav {
+  display: none;
+  @media screen and (min-width: $smbreak) {
+    display: initial;
+    background-color: #4d4d4d;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1000;
+  }
 }

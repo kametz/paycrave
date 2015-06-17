@@ -58,20 +58,6 @@ body {
   background-color: #333333;
   background: repeating-linear-gradient(45deg, #808080, #808080 3px, #919191 3px, #919191 6px); }
 
-::-webkit-scrollbar {
-  width: 10px;
-  height: 1px; }
-
-::-webkit-scrollbar-thumb {
-  background: #cccccc; }
-
-::-webkit-scrollbar-track {
-  background: #F7F7F7; }
-
-body {
-  scrollbar-face-color: #cccccc;
-  scrollbar-track-color: #F7F7F7; }
-
 .window {
   background-color: #F7F7F7;
   height: 100vh;
@@ -86,32 +72,72 @@ body {
   width: 100%; }
   @media screen and (min-width: 500px) {
     .window {
-      border-radius: 5px;
-      height: 640px;
+      border-radius: 45px;
+      height: 560px;
       margin: 10px auto;
       position: relative;
-      width: 360px; } }
+      width: 360px;
+      border-left: 15px solid #333333;
+      border-right: 15px solid #333333;
+      border-top: 60px solid #333333;
+      border-bottom: 55px solid #333333; } }
+
+.window-contents {
+  height: 100vh;
+  padding-top: 30px; }
+  @media screen and (min-width: 500px) {
+    .window-contents {
+      height: 540px;
+      padding-top: 55px; } }
+
+.page-content {
+  padding-bottom: 5px; }
+  @media screen and (min-width: 500px) {
+    .page-content {
+      padding-bottom: 125px; } }
+
+img.phone-top {
+  display: none; }
+  @media screen and (min-width: 500px) {
+    img.phone-top {
+      display: initial;
+      width: 100%;
+      margin-top: -1px;
+      z-index: 1000;
+      position: absolute; } }
 
 .large_header {
-  background-color: #204E99;
-  border-bottom: 10px solid #333333;
-  height: 7%;
+  background-color: #2BBDD0;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  height: 35px;
   width: 100%; }
+  .large_header img {
+    padding-left: 10px;
+    padding-top: 6px;
+    width: 35%; }
+  .large_header i {
+    display: inline-block;
+    padding-top: 4px;
+    padding-right: 20px;
+    float: right; }
   @media screen and (min-width: 500px) {
     .large_header {
-      border-radius: 5px 5px 0 0; } }
-  .large_header img {
-    padding: 5px;
-    padding-top: 8px;
-    width: 35%; }
-    @media screen and (min-width: 500px) {
+      top: 22px; }
       .large_header img {
-        padding-top: 12px;
-        padding-left: 12px; } }
+        padding-left: 10px;
+        padding-top: 6px;
+        width: 35%; }
+      .large_header i {
+        display: inline-block;
+        padding-top: 4px;
+        padding-right: 12px;
+        float: right; } }
 
 .truck-header {
   background-color: #333333;
-  border-top: 10px solid #204E99;
+  border-top: 10px solid #2BBDD0;
   width: 100%; }
   .truck-header h1 {
     padding: 10px;
@@ -129,7 +155,7 @@ body {
     right: 10px; }
 
 .gen-footer {
-  background-color: #204E99;
+  background-color: #2BBDD0;
   height: 45px;
   width: 100%;
   position: absolute;
@@ -138,33 +164,21 @@ body {
   .gen-footer i {
     margin-bottom: 5px;
     margin-top: 10px; }
-  .gen-footer .search-trucks,
-  .gen-footer .my-account,
-  .gen-footer .checkout,
-  .gen-footer .total,
-  .gen-footer .rt-home {
-    width: 39%;
-    text-align: center;
-    height: 45px;
-    float: left; }
-  .gen-footer .rt-home {
-    width: 18%;
-    margin-top: 6px;
-    margin-left: 2px; }
-  .gen-footer .my-account,
-  .gen-footer .checkout {
-    float: right; }
   .gen-footer .checkout,
   .gen-footer .total {
+    width: 39%;
+    text-align: center;
     height: 100%;
+    float: left;
     padding-top: 8px;
     padding-bottom: 10px; }
+  .gen-footer .checkout {
+    float: right;
+    background-color: #2BBDD0; }
   .gen-footer .total {
     margin-bottom: 5px;
     margin-top: 8px;
     padding-left: 5px; }
-  .gen-footer .checkout {
-    background-color: #2BBDD0; }
   .gen-footer .complete {
     background-color: #333333;
     width: 78%;
@@ -179,19 +193,18 @@ body {
       float: right;
       padding-right: 10px;
       margin-top: 10px; }
-  @media screen and (min-width: 500px) {
-    .gen-footer {
-      border-radius: 0 0 5px 5px; } }
 
 .min-footer {
-  background-color: #204E99;
-  height: 10px;
-  width: 100%;
+  background-color: #2BBDD0;
+  bottom: 0;
+  height: 30px;
   position: absolute;
-  bottom: 0; }
+  width: 100%;
+  z-index: 1000; }
   @media screen and (min-width: 500px) {
     .min-footer {
-      border-radius: 0 0 5px 5px; } }
+      bottom: 45px;
+      height: 10px; } }
 
 .button {
   background-color: #2BBDD0;
@@ -204,45 +217,47 @@ body {
 .button:hover {
   background-color: #86CC87; }
 
+.phone-nav {
+  display: none; }
+  @media screen and (min-width: 500px) {
+    .phone-nav {
+      display: initial;
+      background-color: #4d4d4d;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 1000; } }
+
 /* Map */
 #map-canvas {
-  height: 100%;
-  width: 100%;
-  z-index: 800; }
+  min-height: 250px;
+  width: 100%; }
 
 .map-container {
-  height: 45%;
-  margin-bottom: 2%; }
-
-.one-truck {
-  height: 40%; }
+  margin-bottom: 2%;
+  position: relative; }
 
 .map-label {
   background-color: rgba(51, 51, 51, 0.95);
+  bottom: 0;
   margin-top: -40px;
   position: absolute;
-  z-index: 1000;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
   .map-label h1 {
-    padding: 10px;
-    padding-left: 10px;
-    display: inline-block; }
+    display: inline-block;
+    padding: 10px; }
   .map-label i {
     color: #d81b60;
-    text-align: right;
     display: inline-block;
     position: absolute;
+    text-align: right;
     top: 16px; }
 
 /* List of Trucks on homepage */
 .truck-list {
-  height: 28%;
-  overflow-y: auto;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin-top: 10px; }
-  @media screen and (min-width: 375px) {
-    .truck-list {
-      height: 33%; } }
   .truck-list h5 {
     display: inline-block; }
   .truck-list .name {
@@ -268,7 +283,6 @@ body {
 
 /* Truck Detail Page */
 .truck-detail {
-  overflow-y: auto;
   padding: 5px 10px; }
   .truck-detail p {
     margin-top: 1rem;

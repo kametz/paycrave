@@ -1,35 +1,32 @@
 #map-canvas {
-  height: 100%;
+  min-height: 250px;
   width: 100%;
-  z-index: 800;
+  
 }
 
 .map-container {
-  height: 45%;
   margin-bottom: 2%;
-
-}
-
-.one-truck {
-  height: 40%;
+  position: relative;
 }
 
 .map-label {
   background-color: rgba($dkgray, .95);
+  bottom: 0;
   margin-top: -40px;
   position: absolute;
-  z-index: 1000;
   width: 100%;
+  z-index: 2;
+
   h1 {
-    padding: 10px;
-    padding-left: 10px;
     display: inline-block;
+    padding: 10px;
   }
+
   i {
     color: $pink;
-    text-align: right;
-    display: inline-block;  
+    display: inline-block; 
     position: absolute;
+    text-align: right; 
     top: 16px;
   }
 }

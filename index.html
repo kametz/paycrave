@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css" class="css">
+  <link rel="stylesheet" href="css/styles.css" class="css">
   
   <!-- Map -->
     <script src="https://maps.googleapis.com/maps/api/js"></script>
@@ -31,98 +31,110 @@
 
 <body>
   <div class="window">
-    <div class="large_header">
-      <img src="images/paycrave.svg" alt="Paycrave Logo">
-    </div> <!-- /header -->
-    <div class="map-container">
-      <div id="map-canvas"></div>
-      <div class="map-label">
-        <h1 class="white">Food Trucks Near You</h1>
-      </div> 
-    </div><!-- /map -->
-    <div class="truck-list">
-      <a href="pages/truck_detail.html">
-        <div class="selected white">
-          <div class="name">
-            <h5>Nom Kabob</h5> 
-            <img src="images/stars/4star-active.svg" alt="4 stars"> 
-            $$
+    <img src="../images/phone_top.svg" alt="phone info" class="phone-top">
+
+    <div class="window-contents">
+
+      <div class="large_header">
+        <a href="../index.html">
+          <img src="../images/paycrave.svg" alt="Paycrave Logo">
+        </a>
+        <a href="#"><i class="fa fa-user fa-2x"></i></a>
+        <a href="#"><i class="fa fa-question fa-2x"></i></a>
+      </div> <!-- /header -->
+    
+      <div class="page-content">
+
+        <div class="map-container">
+          <div id="map-canvas"></div>
+          <div class="map-label">
+            <h1 class="white">Food Trucks Near You</h1>
+          </div> 
+        </div><!-- /map -->
+        <div class="truck-list">
+          <a href="pages/truck_detail.html">
+            <div class="selected white">
+              <div class="name">
+                <h5>Nom Kabob</h5> 
+                <img src="images/stars/4star-active.svg" alt="4 stars"> 
+                $$
+              </div>
+              <div class="distance">
+                <h5>.3 miles</h5> <i class="fa fa-angle-right"></i>
+              </div>
+            </div>
+          </a>
+
+          <div class="unselected white">
+            <div class="name">
+              <h5>Portal Pizza</h5> 
+              <img src="images/stars/3star-bg.svg" alt="3 stars">
+               $
+             </div>
+            <div class="distance">
+              <h5>.5 miles</h5> <i class="fa fa-angle-right"></i>
+            </div>
           </div>
-          <div class="distance">
-            <h5>.3 miles</h5> <i class="fa fa-angle-right"></i>
+
+          <div class="unselected white">
+            <div class="name">
+              <h5>Espinico's</h5> 
+              <img src="images/stars/4star-bg.svg" alt="4 stars">
+               $$
+             </div>
+            <div class="distance">
+              <h5>.5 miles</h5> <i class="fa fa-angle-right"></i>
+            </div>
           </div>
-        </div>
-      </a>
+          <div class="unselected white">
+            <div class="name">
+              <h5>Agave Azul</h5> 
+              <img src="images/stars/5star-bg.svg" alt="5 stars">
+               $$$
+             </div>
+            <div class="distance">
+              <h5>.7 miles</h5> <i class="fa fa-angle-right"></i>
+            </div>
+          </div>
 
-      <div class="unselected white">
-        <div class="name">
-          <h5>Portal Pizza</h5> 
-          <img src="images/stars/3star-bg.svg" alt="3 stars">
-           $
-         </div>
-        <div class="distance">
-          <h5>.5 miles</h5> <i class="fa fa-angle-right"></i>
-        </div>
-      </div>
+          <div class="unselected white">
+            <div class="name">
+              <h5>Portopotomus</h5> 
+              <img src="images/stars/2star-bg.svg" alt="2 stars">
+               $$$
+             </div>
+            <div class="distance">
+              <h5>1.7 miles</h5> <i class="fa fa-angle-right"></i>
+            </div>
+          </div>
 
-      <div class="unselected white">
-        <div class="name">
-          <h5>Espinico's</h5> 
-          <img src="images/stars/4star-bg.svg" alt="4 stars">
-           $$
-         </div>
-        <div class="distance">
-          <h5>.5 miles</h5> <i class="fa fa-angle-right"></i>
-        </div>
-      </div>
-      <div class="unselected white">
-        <div class="name">
-          <h5>Agave Azul</h5> 
-          <img src="images/stars/5star-bg.svg" alt="5 stars">
-           $$$
-         </div>
-        <div class="distance">
-          <h5>.7 miles</h5> <i class="fa fa-angle-right"></i>
-        </div>
-      </div>
+          <div class="unselected white">
+            <div class="name">
+              <h5>Banana Planet</h5> 
+              <img src="images/stars/5star-bg.svg" alt="5 stars">
+               $
+             </div>
+            <div class="distance">
+              <h5>1.7 miles</h5> <i class="fa fa-angle-right"></i>
+            </div>
+          </div>
+        </div> <!-- /truck list -->
+      </div> <!-- /page content -->
 
-      <div class="unselected white">
-        <div class="name">
-          <h5>Portopotomus</h5> 
-          <img src="images/stars/2star-bg.svg" alt="2 stars">
-           $$$
-         </div>
-        <div class="distance">
-          <h5>1.7 miles</h5> <i class="fa fa-angle-right"></i>
-        </div>
-      </div>
+      <div class="min-footer"></div>
 
-      <div class="unselected white">
-        <div class="name">
-          <h5>Banana Planet</h5> 
-          <img src="images/stars/5star-bg.svg" alt="5 stars">
-           $
-         </div>
-        <div class="distance">
-          <h5>1.7 miles</h5> <i class="fa fa-angle-right"></i>
-        </div>
+      <div class="phone-nav">
+        <img src="../images/phone_nav_01.jpg" alt="phone back">
+        <img src="../images/phone_nav_02.jpg" alt="phone nav">
       </div>
-    </div> <!-- /truck list -->
-
-    <div class="gen-footer white">
-      <div class="search-trucks">
-        <i class="fa fa-search"></i><br> Find a Truck
-      </div>
-      <div class="my-account">
-        <i class="fa fa-user"></i><br> My Account
-      </div>
-    </div>
-
-  </div> <!-- /window -->
+    </div> <!--/window contents (incl header/footer) -->
+  </div> <!-- /window (incl phone shape / nav)-->
 
 
   <!-- Javascript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="libraries/slimScroll/jquery.slimscroll.min.js"></script>
+  <script src="js/scroll.js"></script>
 
 </body>
 </html>
