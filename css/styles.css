@@ -206,16 +206,23 @@ img.phone-top {
   .gen-footer .complete {
     background-color: #333333;
     float: right;
-    padding-bottom: 12px;
+    height: 45px;
+    overflow: hidden;
+    padding-bottom: 7px;
     text-align: center;
-    width: 78%; }
+    width: 78%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; }
     .gen-footer .complete .favorites {
       float: left;
-      margin-top: 2px;
+      margin-top: 6px;
       padding-left: 15px; }
+      .gen-footer .complete .favorites i {
+        margin-bottom: 6px; }
   .gen-footer .rate-it {
     float: right;
-    margin-top: 10px;
+    margin-top: 7px;
     padding-right: 10px; }
   @media screen and (min-width: 500px) {
     .gen-footer {
@@ -354,33 +361,39 @@ img.phone-top {
 
 /* Cart */
 .cart {
-  width: 95%;
-  margin: 20px auto; }
+  margin: 40px auto;
+  width: 95%; }
   .cart .col1 {
     width: 75%; }
   .cart .col2 {
-    width: 25%;
     font-weight: 700;
-    text-align: right; }
+    text-align: right;
+    width: 25%; }
+  .cart em > a {
+    color: #cccccc; }
+  .cart h5 {
+    margin-top: 20px;
+    text-align: center; }
 
 .tip {
-  border: 1px solid #cccccc;
-  background-color: #ffffff; }
+  background-color: #ffffff;
+  border: 1px solid #cccccc; }
 
 .total {
   font-weight: 700; }
 
 .sums {
-  width: 100%;
-  text-transform: uppercase;
+  border-top: 1px solid #333333;
   margin-top: 30px;
-  border-top: 1px solid #333333; }
+  text-transform: uppercase;
+  width: 100%; }
   .sums td {
     padding-top: 10px; }
 
 /* Order Complete / Thank you */
 .thanks {
-  padding: 20px; }
+  padding: 20px;
+  margin-top: 15px; }
   .thanks img {
     width: 100%; }
 
@@ -392,6 +405,7 @@ img.phone-top {
     width: 265px; }
     .signin form input {
       border: 1px solid #cccccc;
+      border-radius: 3px;
       font-size: 1.5rem;
       height: 40px;
       margin-bottom: 15px;
