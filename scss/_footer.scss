@@ -7,17 +7,17 @@
   z-index: 1600;
 
   .checkout,
-  .total, {
-    width: 39%;
-    text-align: center;
-    overflow: hidden;
+  .total {
     float: left;
+    overflow: hidden;
     padding-top: 11px;
+    text-align: center;
+    width: 39%;
   }
 
   .checkout {
-    float: right;
     background-color: $green1;
+    float: right;
     padding-bottom: 11px;
   }
 
@@ -25,83 +25,48 @@
     background-color: $green2;
   }
 
-  .total {
-
-  }
-
   .rt-home {
-    width: 18%;
     float: left;
-   
+    font-size: .9rem;
     padding-top: 3px;
-    font-weight: 100;
-    font-size: .6rem;
+    text-transform: uppercase;
     text-align: center;
+    width: 18%;
+    @media screen and (min-width: $smbreak) {
+      font-weight: 100;
+      font-size: .6em;
+      text-transform: none;
+    }
+
     img {
       padding-bottom: 2px;
     }
+  }
+
+  .complete {
+    background-color: $dkgray;
+    float: right;
+    padding-bottom: 12px;
+    text-align: center;
+    width: 78%;
+    
+    .favorites {
+      float: left;
+      margin-top: 2px;
+      padding-left: 15px;
+    }
+  }
+
+  .rate-it {
+    float: right;
+    margin-top: 10px;
+    padding-right: 10px;
   }
 
   @media screen and (min-width: $smbreak) {
     bottom: 45px; 
   }
 }
-
-/*
-.gen-footer {
-  background-color: $blue;
-  height: 45px;
-  width: 100%;
-  position: absolute;
-  bottom: 150;
-  padding-bottom: 10px;
-
-  i {
-    margin-bottom: 5px;
-    margin-top: 10px;
-  }
-
-  .checkout,
-  .total, {
-    width: 39%;
-    text-align: center;
-    height: 100%;
-    float: left;
-    padding-top: 8px;
-    padding-bottom: 10px;
-  }
-
-  .checkout {
-    float: right;
-    background-color: $blue;
-  }
-
-  .total {
-    margin-bottom: 5px;
-    margin-top: 8px;
-    padding-left: 5px;
-  }
-
-  .complete {
-    background-color: $dkgray;
-    width: 78%;
-    float: right;
-    padding-bottom: 12px;
-    text-align: center;
-    .favorites {
-      float: left;
-      padding-left: 15px;
-      margin-top: 2px;
-    }
-
-    .rate-it {
-      float: right;
-      padding-right: 10px;
-      margin-top: 10px;
-    }
-  }
-}
-*/
 
 .min-footer {
   background-color: $blue;
@@ -119,12 +84,13 @@
 
 .phone-nav {
   display: none;
+
   @media screen and (min-width: $smbreak) {
-    display: initial;
     background-color: #4d4d4d;
-    width: 100%;
-    position: absolute;
     bottom: 0;
+    display: initial;
+    position: absolute;
+    width: 100%;
     z-index: 1000;
   }
 }

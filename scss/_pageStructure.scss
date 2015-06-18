@@ -5,9 +5,6 @@ html {
 } 
 
 body {
-  font-family: $Roboto;
-  font-size: 1.4rem; /* 14px */
-  font-weight: 400;
   background-color: $dkgray;
   background: repeating-linear-gradient(
     45deg,
@@ -16,13 +13,16 @@ body {
     #919191 3px,
     #919191 6px
   );
+  font-family: $Roboto;
+  font-size: 1.4rem; /* 14px */
+  font-weight: 400;
 }
 
 .window {
   background-color: $ltgray;
   height: 100vh;
-  min-height: 500px;
   margin: 0;
+  min-height: 500px;
   overflow: hidden;
   position:absolute;
   top:0;
@@ -71,6 +71,7 @@ body {
 /* Footer */
 @import 'footer';
 
+/* Button */
 .button {
   background-color: $blue;
   border-radius: 3px;

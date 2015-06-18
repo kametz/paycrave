@@ -1,0 +1,57 @@
+.signin {
+  padding-top: 10px;
+  form {
+    margin: 0 auto;
+    width: 265px;
+
+    input {
+      border: 1px solid $medgray;
+      font-size: 1.5rem;
+      height: 40px;
+      margin-bottom: 15px;
+      margin-left: -5px;
+      padding-left: 5px;
+      width: 100%;
+    }
+
+    input[type="submit"] {
+      border: 0;
+      margin-top: -5px;
+      margin-left: 0px;
+    }
+  }
+
+  h4 {
+    background-color: $dkgray;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+  .signin-toggle-group {
+    margin: 25px auto 30px auto;
+    width: 265px;
+  }
+
+  a {
+    background-color: $green1;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-left: -5px;
+    padding: 10px 15px;
+  }
+
+  a:hover {
+    background-color: $green2;
+  }
+
+  .active {
+    border: 4px solid $blue;
+  }
+}

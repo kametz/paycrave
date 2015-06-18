@@ -54,18 +54,18 @@ html {
   /* ~10px */ }
 
 body {
+  background-color: #333333;
+  background: repeating-linear-gradient(45deg, #808080, #808080 3px, #919191 3px, #919191 6px);
   font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   /* 14px */
-  font-weight: 400;
-  background-color: #333333;
-  background: repeating-linear-gradient(45deg, #808080, #808080 3px, #919191 3px, #919191 6px); }
+  font-weight: 400; }
 
 .window {
   background-color: #F7F7F7;
   height: 100vh;
-  min-height: 500px;
   margin: 0;
+  min-height: 500px;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -178,85 +178,49 @@ img.phone-top {
   z-index: 1600; }
   .gen-footer .checkout,
   .gen-footer .total {
-    width: 39%;
-    text-align: center;
-    overflow: hidden;
     float: left;
-    padding-top: 11px; }
+    overflow: hidden;
+    padding-top: 11px;
+    text-align: center;
+    width: 39%; }
   .gen-footer .checkout {
-    float: right;
     background-color: #69C96A;
+    float: right;
     padding-bottom: 11px; }
   .gen-footer .checkout:hover {
     background-color: #86CC87; }
   .gen-footer .rt-home {
-    width: 18%;
     float: left;
+    font-size: .9rem;
     padding-top: 3px;
-    font-weight: 100;
-    font-size: .6rem;
-    text-align: center; }
+    text-transform: uppercase;
+    text-align: center;
+    width: 18%; }
+    @media screen and (min-width: 500px) {
+      .gen-footer .rt-home {
+        font-weight: 100;
+        font-size: .6em;
+        text-transform: none; } }
     .gen-footer .rt-home img {
       padding-bottom: 2px; }
+  .gen-footer .complete {
+    background-color: #333333;
+    float: right;
+    padding-bottom: 12px;
+    text-align: center;
+    width: 78%; }
+    .gen-footer .complete .favorites {
+      float: left;
+      margin-top: 2px;
+      padding-left: 15px; }
+  .gen-footer .rate-it {
+    float: right;
+    margin-top: 10px;
+    padding-right: 10px; }
   @media screen and (min-width: 500px) {
     .gen-footer {
       bottom: 45px; } }
 
-/*
-.gen-footer {
-  background-color: $blue;
-  height: 45px;
-  width: 100%;
-  position: absolute;
-  bottom: 150;
-  padding-bottom: 10px;
-
-  i {
-    margin-bottom: 5px;
-    margin-top: 10px;
-  }
-
-  .checkout,
-  .total, {
-    width: 39%;
-    text-align: center;
-    height: 100%;
-    float: left;
-    padding-top: 8px;
-    padding-bottom: 10px;
-  }
-
-  .checkout {
-    float: right;
-    background-color: $blue;
-  }
-
-  .total {
-    margin-bottom: 5px;
-    margin-top: 8px;
-    padding-left: 5px;
-  }
-
-  .complete {
-    background-color: $dkgray;
-    width: 78%;
-    float: right;
-    padding-bottom: 12px;
-    text-align: center;
-    .favorites {
-      float: left;
-      padding-left: 15px;
-      margin-top: 2px;
-    }
-
-    .rate-it {
-      float: right;
-      padding-right: 10px;
-      margin-top: 10px;
-    }
-  }
-}
-*/
 .min-footer {
   background-color: #2BBDD0;
   bottom: 0;
@@ -273,13 +237,14 @@ img.phone-top {
   display: none; }
   @media screen and (min-width: 500px) {
     .phone-nav {
-      display: initial;
       background-color: #4d4d4d;
-      width: 100%;
-      position: absolute;
       bottom: 0;
+      display: initial;
+      position: absolute;
+      width: 100%;
       z-index: 1000; } }
 
+/* Button */
 .button {
   background-color: #2BBDD0;
   border-radius: 3px;
@@ -363,11 +328,11 @@ img.phone-top {
   overflow: hidden; }
 
 .menu-photo {
-  width: 50%; }
+  width: 60%; }
 
 .menu-asides {
   background-color: #2BBDD0;
-  width: 50%;
+  width: 40%;
   text-align: center;
   padding: 10px; }
   .menu-asides div {
@@ -418,3 +383,46 @@ img.phone-top {
   padding: 20px; }
   .thanks img {
     width: 100%; }
+
+/* Sign In */
+.signin {
+  padding-top: 10px; }
+  .signin form {
+    margin: 0 auto;
+    width: 265px; }
+    .signin form input {
+      border: 1px solid #cccccc;
+      font-size: 1.5rem;
+      height: 40px;
+      margin-bottom: 15px;
+      margin-left: -5px;
+      padding-left: 5px;
+      width: 100%; }
+    .signin form input[type="submit"] {
+      border: 0;
+      margin-top: -5px;
+      margin-left: 0px; }
+  .signin h4 {
+    background-color: #333333;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    color: white;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    width: 100%; }
+  .signin .signin-toggle-group {
+    margin: 25px auto 30px auto;
+    width: 265px; }
+  .signin a {
+    background-color: #69C96A;
+    border-radius: 3px;
+    margin-right: 10px;
+    margin-left: -5px;
+    padding: 10px 15px; }
+  .signin a:hover {
+    background-color: #86CC87; }
+  .signin .active {
+    border: 4px solid #2BBDD0; }
