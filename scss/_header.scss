@@ -1,0 +1,86 @@
+img.phone-top {
+  display: none;
+  
+  @media screen and (min-width: $smbreak) {
+    display: initial;
+    margin-top: -1px;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+  }
+}
+
+.large_header {
+  background-color: $blue;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  img {
+    padding-top: 6px;
+    padding-left: 10px;
+    width: 35%;
+  }
+
+  i {
+    display: inline-block;
+    float: right;
+    padding-top: 4px;
+    padding-right: 20px;
+  }
+
+  @media screen and (min-width: $smbreak) {
+    top: 22px;
+
+    img {
+      padding-left: 10px;
+      padding-top: 6px;
+      width: 35%;
+    }
+
+    i {
+      display: inline-block;
+      float: right;
+      padding-top: 4px;
+      padding-right: 12px;
+    }
+  }
+}
+
+.truck-header {
+  background-color: $dkgray;
+  border-top: 10px solid $blue;
+  height: 45px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index:2000;
+
+  h1 {
+    display: inline-block;
+    padding: 10px;
+    padding-left: 10px;
+  }
+
+  i {
+    color: $pink;
+    display: inline-block; 
+    position: absolute;
+    text-align: right;
+    top: 15px;
+  }
+
+  img {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+  }
+
+  @media screen and (min-width: $smbreak) {
+    top: 22px;
+
+    
+  }
+}

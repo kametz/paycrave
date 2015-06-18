@@ -1,3 +1,7 @@
+.menu {
+  padding-bottom: 45px;
+}
+
 .menu-top {
   width: 100%;
   display: flex;
@@ -5,9 +9,11 @@
   height: 160px;
   overflow: hidden;
 }
+
 .menu-photo {
     width: 50%;
 }
+
 .menu-asides {
   background-color: $blue;
   width: 50%;
@@ -22,11 +28,6 @@
 }
 
 .menu-bottom {
-  height: 45%;
-  @media screen and (min-width: 375px) {
-    height: 55%;
-  }
-  overflow-y: auto;
   width: 95%;
   margin: 10px auto;
   padding-left: 15px;

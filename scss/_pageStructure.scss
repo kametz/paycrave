@@ -52,147 +52,24 @@ body {
   }
 }
 
+.window-contents.wc2 {
+  padding-top: 50px;
+  @media screen and (min-width: $smbreak) {
+    padding-top: 75px;
+  }
+}
+
 .page-content {
   padding-bottom: 5px;
-  @media screen and (min-width: $smbreak) {
-    padding-bottom: 125px;
-  }
 }
 
-img.phone-top {
-  display: none;
-  @media screen and (min-width: $smbreak) {
-    display: initial;
-    width: 100%;
-    margin-top: -1px;
-    z-index: 1000;
-    position:absolute;
-  }
-}
 
-.large_header {
-  background-color: $blue;
-  position: absolute;
-  top: 0;
-  z-index: 1000;
-  height: 35px;
-  width: 100%;
-  img {
-    padding-left: 10px;
-    padding-top: 6px;
-    width: 35%;
-  }
-  i {
-    display: inline-block;
-    padding-top: 4px;
-    padding-right: 20px;
-    float: right;
-  }
-  @media screen and (min-width: $smbreak) {
-    top: 22px;
-    img {
-      padding-left: 10px;
-      padding-top: 6px;
-      width: 35%;
-    }
-    i {
-      display: inline-block;
-      padding-top: 4px;
-      padding-right: 12px;
-      float: right;
-    }
-  }
-}
+/* Header */
+@import 'header';
 
-.truck-header {
-  background-color: $dkgray;
-  border-top: 10px solid $blue;
-  width: 100%;
-  h1 {
-    padding: 10px;
-    padding-left: 10px;
-    display: inline-block;
-  }
-  i {
-    color: $pink;
-    text-align: right;
-    display: inline-block;  
-    position: absolute;
-    top: 25px;
-  }
-  img {
-    position: absolute;
-    top: 23px;
-    right: 10px;
-  }
-}
 
-.gen-footer {
-  background-color: $blue;
-  height: 45px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  padding-bottom: 10px;
-  i {
-    margin-bottom: 5px;
-    margin-top: 10px;
-  }
-
-  .checkout,
-  .total, {
-    width: 39%;
-    text-align: center;
-    height: 100%;
-    float: left;
-    padding-top: 8px;
-    padding-bottom: 10px;
-  }
-
-  .checkout {
-    float: right;
-    background-color: $blue;
-  }
-
-  .total {
-    margin-bottom: 5px;
-    margin-top: 8px;
-    padding-left: 5px;
-  }
-
-  .complete {
-    background-color: $dkgray;
-    width: 78%;
-    float: right;
-    padding-bottom: 12px;
-    text-align: center;
-    .favorites {
-      float: left;
-      padding-left: 15px;
-      margin-top: 2px;
-    }
-
-    .rate-it {
-      float: right;
-      padding-right: 10px;
-      margin-top: 10px;
-    }
-  }
-}
-
-.min-footer {
-  background-color: $blue;
-  bottom: 0;
-  height: 30px;
-  position: absolute;
-  width: 100%;
-  z-index: 1000;
-
-  @media screen and (min-width: $smbreak) {
-    bottom: 45px; 
-    height: 10px;
-  }
-}
+/* Footer */
+@import 'footer';
 
 .button {
   background-color: $blue;
@@ -207,14 +84,3 @@ img.phone-top {
   background-color: $green2;
 }
 
-.phone-nav {
-  display: none;
-  @media screen and (min-width: $smbreak) {
-    display: initial;
-    background-color: #4d4d4d;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    z-index: 1000;
-  }
-}

@@ -1,8 +1,12 @@
 
 
 $( document ).ready(function() {
-    $('.page-content').slimScroll({
+    $('.trucks').slimScroll({
         height: '450px',
-
     });
+
+    $('.menu').slimScroll({
+        height: '400px',
+    });
+
 });
