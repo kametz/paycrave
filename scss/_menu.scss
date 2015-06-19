@@ -4,21 +4,32 @@
 
 .menu-top {
   width: 100%;
-  display: flex;
-  flex-wrap: flex;
   height: 160px;
+  display: inline-block;
   overflow: hidden;
 }
 
 .menu-photo {
-    width: 60%;
+    width: 55%;
+    float: left;
+    overflow: hidden;
 }
 
 .menu-asides {
   background-color: $blue;
-  width: 40%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; 
+  height: 160px;
+  width: 45%;
   text-align: center;
   padding: 10px;
+  float: right;
+  @media screen and (max-width: 339px) {
+    h4 {
+      font-size: 1.8rem;
+    }
+  }
   div {
     padding: 10px;
   }

@@ -18,21 +18,22 @@ body {
   font-weight: 400;
 }
 
-.window {
+.window-contents {
   background-color: $ltgray;
-  height: 100vh;
   margin: 0;
-  min-height: 500px;
-  overflow: hidden;
   position:absolute;
   top:0;
   right:0;
   bottom:0;
   left:0;
   width: 100%;
+  padding-top: 35px;
+  padding-bottom: 20px;
   @media screen and (min-width: $smbreak) {
+    padding-top: 55px;
+    padding-bottom: 50px;
     border-radius: 45px;
-    height: 560px;
+    height: 500px;
     margin: 10px auto;
     position: relative;
     width: 360px;
@@ -43,26 +44,15 @@ body {
   }
 }
 
-.window-contents {
-  height: 100vh;
-  padding-top: 30px;
-  @media screen and (min-width: $smbreak) {
-    height: 540px;
-    padding-top: 55px;
-  }
-}
-
 .window-contents.wc2 {
-  padding-top: 50px;
+  padding-top: 55px;
+  padding-bottom: 45px;
   @media screen and (min-width: $smbreak) {
-    padding-top: 75px;
+    height: 440px;
+    padding-top: 77px;
+    padding-bottom: 87px;
   }
 }
-
-.page-content {
-  padding-bottom: 5px;
-}
-
 
 /* Header */
 @import 'header';

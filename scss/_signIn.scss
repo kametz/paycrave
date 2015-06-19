@@ -55,6 +55,6 @@
   }
 
   .active {
-    border: 4px solid $green1;
+    background-color: darken($blue, 20%);
   }
 }

@@ -61,22 +61,23 @@ body {
   /* 14px */
   font-weight: 400; }
 
-.window {
-  background-color: #F7F7F7;
-  height: 100vh;
+.window-contents {
+  background-color: #f7f5f2;
   margin: 0;
-  min-height: 500px;
-  overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%; }
+  width: 100%;
+  padding-top: 35px;
+  padding-bottom: 20px; }
   @media screen and (min-width: 500px) {
-    .window {
+    .window-contents {
+      padding-top: 55px;
+      padding-bottom: 50px;
       border-radius: 45px;
-      height: 560px;
+      height: 500px;
       margin: 10px auto;
       position: relative;
       width: 360px;
@@ -85,22 +86,14 @@ body {
       border-top: 60px solid #333333;
       border-bottom: 55px solid #333333; } }
 
-.window-contents {
-  height: 100vh;
-  padding-top: 30px; }
-  @media screen and (min-width: 500px) {
-    .window-contents {
-      height: 540px;
-      padding-top: 55px; } }
-
 .window-contents.wc2 {
-  padding-top: 50px; }
+  padding-top: 55px;
+  padding-bottom: 45px; }
   @media screen and (min-width: 500px) {
     .window-contents.wc2 {
-      padding-top: 75px; } }
-
-.page-content {
-  padding-bottom: 5px; }
+      height: 440px;
+      padding-top: 77px;
+      padding-bottom: 87px; } }
 
 /* Header */
 img.phone-top {
@@ -110,6 +103,7 @@ img.phone-top {
       display: initial;
       margin-top: -1px;
       position: absolute;
+      top: 0;
       width: 100%;
       z-index: 1000; } }
 
@@ -183,10 +177,15 @@ img.phone-top {
     padding-top: 11px;
     text-align: center;
     width: 39%; }
+  .gen-footer .total {
+    padding-top: 14px; }
   .gen-footer .checkout {
     background-color: #69C96A;
     float: right;
-    padding-bottom: 11px; }
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 45px; }
   .gen-footer .checkout:hover {
     background-color: #86CC87; }
   .gen-footer .rt-home {
@@ -226,18 +225,18 @@ img.phone-top {
     padding-right: 10px; }
   @media screen and (min-width: 500px) {
     .gen-footer {
-      bottom: 45px; } }
+      bottom: 42px; } }
 
 .min-footer {
   background-color: #2BBDD0;
-  bottom: 0;
-  height: 30px;
+  bottom: 0px;
+  height: 15px;
   position: absolute;
   width: 100%;
   z-index: 1000; }
   @media screen and (min-width: 500px) {
     .min-footer {
-      bottom: 45px;
+      bottom: 42px;
       height: 10px; } }
 
 .phone-nav {
@@ -247,6 +246,7 @@ img.phone-top {
       background-color: #4d4d4d;
       bottom: 0;
       display: initial;
+      height: 42px;
       position: absolute;
       width: 100%;
       z-index: 1000; } }
@@ -329,19 +329,28 @@ img.phone-top {
 
 .menu-top {
   width: 100%;
-  display: flex;
-  flex-wrap: flex;
   height: 160px;
+  display: inline-block;
   overflow: hidden; }
 
 .menu-photo {
-  width: 60%; }
+  width: 55%;
+  float: left;
+  overflow: hidden; }
 
 .menu-asides {
   background-color: #2BBDD0;
-  width: 40%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 160px;
+  width: 45%;
   text-align: center;
-  padding: 10px; }
+  padding: 10px;
+  float: right; }
+  @media screen and (max-width: 339px) {
+    .menu-asides h4 {
+      font-size: 1.8rem; } }
   .menu-asides div {
     padding: 10px; }
   .menu-asides div:first-child {
@@ -441,4 +450,4 @@ img.phone-top {
   .signin a:hover {
     background-color: #86CC87; }
   .signin .active {
-    border: 4px solid #69C96A; }
+    background-color: #1a707b; }
