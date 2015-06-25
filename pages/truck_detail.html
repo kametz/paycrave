@@ -19,11 +19,24 @@
       function initialize() {
         var mapCanvas = document.getElementById('map-canvas');
         var mapOptions = {
-          center: new google.maps.LatLng(39.7497633, -104.9929262),
-          zoom: 14,
+          center: new google.maps.LatLng(39.755, -104.9875),
+          zoom: 16,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         }
         var map = new google.maps.Map(mapCanvas, mapOptions)
+
+        // Add custom icon
+        var nomKabob = new google.maps.LatLng(39.755, -104.9875);
+
+        var marker = new google.maps.Marker({
+          position: nomKabob,
+          title:"Nom Kabob",
+          icon: 'http://paycrave.nfshost.com/images/truckSel.svg'
+        });
+
+        // To add the marker to the map, call setMap();
+        marker.setMap(map);
+  
       }
       google.maps.event.addDomListener(window, 'load', initialize);
     </script>
