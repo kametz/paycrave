@@ -14,15 +14,15 @@
 }
 
 .search-box {
-  width: 100%;
-  position: absolute;
+  border: none;
+  display: none;
+  font-size: 1.2em;
+  height: 40px;
   left: 0;
   margin-top: -85px;
-  height: 40px;
-  border: none;
-  font-size: 1.2em;
   padding-left: 10px;
-  display: none;
+  position: absolute;
+  width: 100%;
 }
 
 .search-box:focus {
@@ -36,11 +36,10 @@
 .search,
 .location {
   background-color: rgba($dkgray, .85);
-  position: absolute;
+  height: 40px;
+  margin-top: -85px;position: absolute;
   right: 0;
   width: 43px;
-  height: 40px;
-  margin-top: -85px;
   z-index: 4;
 
   i {
