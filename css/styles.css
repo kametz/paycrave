@@ -276,6 +276,7 @@ img.phone-top {
   width: 100%; }
 
 .search-box {
+  background-color: #f7f5f2;
   border: none;
   display: none;
   font-size: 1.2em;
