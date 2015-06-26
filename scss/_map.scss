@@ -9,6 +9,50 @@
   position: relative;
 }
 
+.search-line {
+  width: 100%;
+}
+
+.search-box {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  margin-top: -85px;
+  height: 40px;
+  border: none;
+  font-size: 1.2em;
+  padding-left: 10px;
+  display: none;
+}
+
+.search-box:focus {
+  outline: 0;
+}
+
+.show-search {
+  display: initial;
+}
+
+.search,
+.location {
+  background-color: rgba($dkgray, .85);
+  position: absolute;
+  right: 0;
+  width: 43px;
+  height: 40px;
+  margin-top: -85px;
+  z-index: 4;
+
+  i {
+    margin-left: 13px;
+    margin-top: 13px;
+  }
+}
+
+.location {
+  margin-top: -125px;
+}
+
 .map-label {
   background-color: rgba($dkgray, .95);
   bottom: 0;

@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".search").click(function(){$(".search-box").toggleClass("show-search")})});
